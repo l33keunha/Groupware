@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@192.168.0.51:1521/ORCL
+    username: drt
+    password: drt123
+  thymeleaf:
+    cache: false
+  devtools:
+    livereload:
+      enabled: true
+    restart:
+      enabled: true
+  config:
+    location: currentdir/config
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    multiple-result-sets-enabled: false
+    map-underscore-to-camel-case: true
+    call-setters-on-nulls: true
+    default-fetch-size: 500
+
+server:
+  port: 8888
+  tomcat:
+    additional-tld-skip-patterns:  "*.jar"
