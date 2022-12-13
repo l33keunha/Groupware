@@ -6,6 +6,8 @@ spring:
     password: drt123
   thymeleaf:
     cache: false
+    prefix: classpath:templates/
+    suffix: .html
   devtools:
     livereload:
       enabled: true
@@ -26,3 +28,5 @@ server:
   port: 8888
   tomcat:
     additional-tld-skip-patterns:  "*.jar"
+    
+

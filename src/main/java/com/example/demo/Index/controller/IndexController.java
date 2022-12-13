@@ -1,5 +1,14 @@
 package com.example.demo.Index.controller;
 
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@Controller
 public class IndexController {
 
+    @RequestMapping("/main.do")
+    public String goMain(HttpServletRequest req, HttpServletResponse rse){return "main/index";}
 }
