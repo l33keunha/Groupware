@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>springboot test page</title>
+    <div th:replace="test/test_configure"></div>
+</head>
+
+
+<body>
+	<div id="test">
+		테스트 페이지입니다.
+	</div>
+	<div id="formDiv">
+	<form action="/test1"  method="post">
+		<label th:for="name">이름 : </label>
+		<input type="text" name="name" placeholder="이름을 입력하세요"/>
+		<label th:for="phone">연락처 : </label>
+		<input type="text"  name="phone"   placeholder="연락처를 입력하세요"/>
+		<button id="formBtn">클릭</button>
+	</form>
+	</div>
+	<div id="ajaxDiv">
+		<input type="text" id="param">
+		<input type="text" id="param2">
+		<button id="ajaxBtn">클릭</button>
+	</div>
+</body>
+</html>

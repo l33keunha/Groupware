@@ -1,9 +1,5 @@
 spring:
   datasource:
-#    driver-class-name: oracle.jdbc.OracleDriver
-#    url: jdbc:oracle:thin:@192.168.0.51:1521/ORCL
-#    username: drt
-#    password: drt123
    driver-class-name: com.mysql.cj.jdbc.Driver
    url: jdbc:mysql://localhost:3306/groupware?serverTimezone=Asia/Seoul
    username: groupware
@@ -29,8 +25,10 @@ mybatis:
     default-fetch-size: 500
 
 server:
-  port: 8888
+  port: 7080
   tomcat:
     additional-tld-skip-patterns:  "*.jar"
+    
+
     
 
